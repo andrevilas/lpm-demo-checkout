@@ -1,4 +1,8 @@
-/** Regras simples de risco aplicadas antes da cobrança. Pontuação de 0 a 100. */
+/**
+ * Regras simples de risco aplicadas antes da cobrança. Pontuação de 0 a 100.
+ * Ainda não cobrem compras parceladas em produção: o limite de revisão manual aguarda decisão
+ * no roadmap ("Antifraude no checkout").
+ */
 import type { Money } from '../src/money';
 
 export interface RiskInput {
